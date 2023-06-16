@@ -52,7 +52,7 @@ app.get("/todo/complete/:id", async (req, res) => {
   res.json(todo);
 });
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server Started on PORT ${PORT} `);
 });
