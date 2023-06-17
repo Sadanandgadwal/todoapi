@@ -13,7 +13,7 @@ app.use(
 );
 app.use(express.json());
 
-app.get("/todos", async (req, res) => {
+app.get("/todo", async (req, res) => {
   try {
     const todos = await Todo.find({});
 
