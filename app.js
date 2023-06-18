@@ -8,7 +8,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://thriving-bombolone-98e8f7.netlify.app", "localhost:5173"],
+    origin: [
+      "https://thriving-bombolone-98e8f7.netlify.app",
+      "http://localhost:5173",
+    ],
   })
 );
 app.use(express.json());
