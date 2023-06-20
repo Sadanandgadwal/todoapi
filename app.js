@@ -10,6 +10,7 @@ app.use(
   cors({
     origin: [
       "https://thriving-bombolone-98e8f7.netlify.app",
+      "https://todoapp-yesg.netlify.app/,
       "http://localhost:5173",
     ],
   })
