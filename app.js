@@ -8,13 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://thriving-bombolone-98e8f7.netlify.app",
-      "https://todoapp-yesg.netlify.app",
-      "http://localhost:5173",
-      "https://todoapi-production-db90.up.railway.app/todo",
-      "*",
-    ],
+     origin: "*",
   })
 );
 app.use(express.json());
